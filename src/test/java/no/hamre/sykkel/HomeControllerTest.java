@@ -12,7 +12,7 @@ public class HomeControllerTest {
 	public void testController() {
 		HomeController controller = new HomeController();
 		Model model = new ExtendedModelMap();
-		Assert.assertEquals("home",controller.home(model));
+		Assert.assertEquals("home",controller.showHomePage(model));
 		
 		Object message = model.asMap().get("controllerMessage");
 		Assert.assertEquals("This is the message from the controller!",message);
