@@ -9,6 +9,7 @@
 
 	<mvc:resources mapping="/resources/**" location="/resources"/>
     <mvc:annotation-driven/>
+    <context:annotation-config/>
     <context:component-scan base-package="no.hamre.sykkel" />
 
 
